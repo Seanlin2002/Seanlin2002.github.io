@@ -1,714 +1,308 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Coding Projects</title>
-    <style>
-        /* Add your custom CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* Set a light background color */
-            margin: 0;
-            padding: 0;
-            color: #333; /* Set a dark text color */
-        }
-
-        h1 {
-            text-align: left; /* Left justify the header */
-            margin-top: 50px;
-            color: #333; /* Set a dark text color */
-        }
-
-        .project {
-            background-color: #fff; /* Set a white background color */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        .project h2 {
-            color: #333; /* Set a dark text color */
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: #777; /* Set a medium text color */
-            margin-bottom: 20px;
-        }
-
-        .project a {
-            background-color: #333; /* Set a dark background color */
-            color: #fff; /* Set a light text color */
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 3px;
-            transition: background-color 0.3s ease;
-        }
-
-        .project a:hover {
-            background-color: #555; /* Set a slightly darker background color on hover */
-        }
-
-        .sidebar {
-            background-color: #f2f2f2; /* Set a light background color */
-            color: #333; /* Set a dark text color */
-            padding: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .sidebar h2 {
-            margin-bottom: 20px;
-        }
-
-        .sidebar p {
-            margin-bottom: 10px;
-        }
-
-        .sidebar img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .sidebar a {
-            color: #333; /* Set a dark text color */
-            text-decoration: none;
-            margin-bottom: 10px;
-        }
-
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
-
-        .main-content {
-            margin-left: 220px; /* Adjust this value to create space for the sidebar */
-        }
-
-        .resume {
-            background-color: #fff; /* Set a white background color */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .resume h2 {
-            color: #333; /* Set a dark text color */
-            margin-bottom: 10px;
-        }
-
-        .resume p {
-            color: #777; /* Set a medium text color */
-            margin-bottom: 20px;
-        }
-
-        .resume a {
-            background-color: #333; /* Set a dark background color */
-            color: #fff; /* Set a light text color */
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 3px;
-            transition: background-color 0.3s ease;
-        }
-
-        .resume a:hover {
-            background-color: #555; /* Set a slightly darker background color on hover */
-        }
-
-        .resume iframe {
-            width: 100%;
-            height: 500px;
-            margin-top: 20px;
-        }
-
-        .skills {
-            background-color: #fff; /* Set a white background color */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-        }
-
-        .skills h2 {
-            color: #333; /* Set a dark text color */
-            margin-bottom: 10px;
-        }
-
-        .skills .skill-column {
-            width: 30%;
-            margin-bottom: 10px;
-        }
-
-        .skills .skill-column .skill-name {
-            color: #777; /* Set a medium text color */
-            margin-bottom: 5px;
-        }
-
-        .skills .skill-column .progress-bar {
-            width: 100%;
-            height: 10px;
-            background-color: #f2f2f2; /* Set a light background color */
-            border-radius: 5px;
-        }
-
-        .skills .skill-column .progress-bar .progress {
-            height: 100%;
-            border-radius: 5px;
-            background-color: #333; /* Set a dark background color */
-        }
-
-        /* Custom CSS for color accents */
-        .accent-blue {
-            background-color: #b3e6ff; /* Set a light blue accent color */
-        }
-
-        .accent-green {
-            background-color: #b3ffb3; /* Set a light green accent color */
-        }
-
-        .accent-yellow {
-            background-color: #ffffb3; /* Set a light yellow accent color */
-        }
-
-        .accent-red {
-            background-color: #ffb3b3; /* Set a light red accent color */
-        }
-    </style>
-
-    <link rel="icon" href="lucki-icon.png" type="image/x-icon">
-
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
 </head>
-<body>
-    <!-- Rest of the HTML code -->
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Coding Projects</title>
-        <style>
-            /* Add your custom CSS styles here */
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #333;
-                margin: 0;
-                padding: 0;
-                color: #fff;
-            }
-    
-            h1 {
-                text-align: left; /* Left justify the header */
-                margin-top: 50px;
-                color: #fff;
-            }
-    
-            .project {
-                background-color: #444;
-                border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                padding: 20px;
-                margin: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                transition: transform 0.3s ease;
-            }
-    
-            .project:hover,
-            .resume:hover,
-            .skills:hover {
-                transform: translateY(-5px);
-            }
-    
-            .project h2 {
-                color: #fff;
-                margin-bottom: 10px;
-            }
-    
-            .project p {
-                color: #ccc;
-                margin-bottom: 20px;
-            }
-    
-            .project a {
-                background-color: #fff;
-                color: #333;
-                padding: 10px 20px;
-                text-decoration: none;
-                border-radius: 3px;
-                transition: background-color 0.3s ease;
-            }
-    
-            .project a:hover {
-                background-color: #eee;
-            }
-    
-            .sidebar {
-                background-color: #555;
-                color: #fff;
-                padding: 20px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                width: 200px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-    
-            .sidebar h2 {
-                margin-bottom: 20px;
-            }
-    
-            .sidebar p {
-                margin-bottom: 10px;
-            }
-    
-            .sidebar img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                margin-bottom: 20px;
-            }
-    
-            .sidebar a {
-                color: #fff;
-                text-decoration: none;
-                margin-bottom: 10px;
-            }
-    
-            .sidebar a:hover {
-                text-decoration: underline;
-            }
-    
-            .main-content {
-                margin-left: 220px; /* Adjust this value to create space for the sidebar */
-            }
-    
-            .resume {
-                background-color: #444;
-                border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                padding: 20px;
-                margin: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-    
-            .resume h2 {
-                color: #fff;
-                margin-bottom: 10px;
-            }
-    
-            .resume p {
-                color: #ccc;
-                margin-bottom: 20px;
-            }
-    
-            .resume a {
-                background-color: #fff;
-                color: #333;
-                padding: 10px 20px;
-                text-decoration: none;
-                border-radius: 3px;
-                transition: background-color 0.3s ease;
-            }
-    
-            .resume a:hover {
-                background-color: #eee;
-            }
-    
-            .resume iframe {
-                width: 100%;
-                height: 500px;
-                margin-top: 20px;
-            }
-    
-            .skills {
-                background-color: #444;
-                border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                padding: 20px;
-                margin: 20px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                text-align: center;
-            }
-    
-            .skills h2 {
-                color: #fff;
-                margin-bottom: 10px;
-            }
-    
-            .skills .skill-column {
-                width: 30%;
-                margin-bottom: 10px;
-            }
-    
-            .skills .skill-column .skill-name {
-                color: #ccc;
-                margin-bottom: 5px;
-            }
-    
-            .skills .skill-column .progress-bar {
-                width: 100%;
-                height: 10px;
-                background-color: #555;
-                border-radius: 5px;
-            }
-    
-            .skills .skill-column .progress-bar .progress {
-                height: 100%;
-                border-radius: 5px;
-                background-color: #fff;
-            }
+<body class="w3-light-grey">
 
-            
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">Logo</span>
+</div>
 
-            /* The grid: Four equal columns that floats next to each other */
-            .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-            }
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Mike</strong></span><br>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+  </div>
+</nav>
 
-            /* Style the images inside the grid */
-            .column img {
-            opacity: 0.8;
-            cursor: pointer;
-            }
 
-            .column img:hover {
-            opacity: 1;
-            }
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-            /* Clear floats after the columns */
-            .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
 
-            /* The expanding image container (positioning is needed to position the close button and the text) */
-            .container {
-            position: relative;
-            display: none;
-            }
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+  </header>
 
-            /* Expanding image text */
-            #imgtext {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            color: white;
-            font-size: 20px;
-            }
-
-            /* Closable button inside the image */
-            .closebtn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            color: white;
-            font-size: 35px;
-            cursor: pointer;
-            }
-        </style>
-
-        
-    </head>
-    <body>
-        <div class="sidebar">
-            <img src="profile.png" alt="Profile Picture">
-            <h2>About Me</h2>
-            <p style="text-align: center;">My name is Ethan Leonard and I am a computer science student at Bellevue College, pursuing an Associate of Arts and Sciences degree through the Running Start program. I am passionate about coding and learning new technologies, such as ChatGPT and robotics, that can enhance human-computer interaction and solve real-world problems.
-            </p>
-            <br>
-            <a href="resume.pdf">Download Resume</a>
-            <br>
-            <div class="social-icons">
-                <a href="https://github.com/Rootbeerfloat82" target="_blank">
-                    <img src="github-icon.png" alt="GitHub Icon" style="width: 30px; height: 30px; margin-right: 5px;">
-                </a>
-                <a href="https://www.linkedin.com/in/ethan-leonard-878541204/" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn Icon" style="width: 30px; height: 30px; margin-right: 5px;">
-                </a>
-                <a href="mailto:ethan.leonard821@gmail.com">
-                    <img src="email-icon.png" alt="Email Icon" style="width: 30px; height: 30px; margin-right: 5px;">
-                </a>
-            </div>
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>52</h3>
         </div>
-    
-        <h1 style="margin-left: 250px; text-align: left;">Ethan Leonard - Project Portfolio</h1> <!-- Left justify the header -->
-    
-        <div class="main-content">
-            <div class="project">
-                <h2><a target="_blank" href="https://tinyurl.com/cs-stalkers">C$ Stalkers</a></h2>
-                    <!-- The grid: four columns -->
-                    <div style="margin-left: 16%;" class="row">
-                        <div class="column">        
-                            <img style="max-width: 100%" src="csstalkers-login.png"  onclick="myFunction(this, 1);">
-                        </div>
-                        <div class="column">
-                            <img style="max-width: 100%" src="stalker-table.png"  onclick="myFunction(this, 1);">
-                        </div>
-                        <div class="column">
-                            <img style="max-width: 100%" src="stalker-chart.png"  onclick="myFunction(this, 1);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 16%;" class="row">
-                        <div class="column">
-                            <img style="max-width: 100%" src="stalker-assistant2.png"  onclick="myFunction(this, 1);">
-                        </div>
-                        <div class="column">
-                            <img style="max-width: 100%" src="stalker-assistant1.png"  onclick="myFunction(this, 1);">
-                        </div>
-                        <div class="column">
-                            <img style="max-width: 100%" src="stalker-closed.png"  onclick="myFunction(this, 1);">
-                        </div> 
-                    </div>
-                    
-                    <!-- The expanding image container -->
-                    <div class="container">
-                        <!-- Close the image -->
-                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    
-                        <!-- Expanded image -->
-                        <img id="expandedImg1" style="width:100%">
-                    
-                        <!-- Image text -->
-                        <div id="imgtext"></div>
-                    </div>
-                    
-                <p>Experience the thrill of the stock market in real-time with our cutting-edge Flask Python website. Dive into the world of finance with our interactive stock simulator powered by live API data, providing an authentic and dynamic trading environment. Stay engaged and informed as our website features two AI chat assistants, offering valuable insights, answering queries, and guiding you through your investment journey. Witness your progress come to life with automatically updating charts that reflect real-time stock values, allowing you to track your portfolio's performance seamlessly. Whether you're a seasoned investor or a curious beginner, our Flask website offers a user-friendly and immersive experience, combining the excitement of a live stock market with the convenience of AI-powered assistance and visually appealing, dynamically updating charts.</p>
-                <a target="_blank" href="https://github.com/Rootbeerfloat82/CS_Stalkers">View Code</a>
-            </div>
-
-            <div class="project">
-                <h2><a target="_blank" href="https://www.bccomputerprogramingclub.com/">BC Computer Programming Club Website</h2></a>
-        
-                <!-- The grid: four columns -->
-                <div style="margin-left: 16%;" class="row">
-                    <div class="column">        
-                    <img style="max-width: 100%" src="bccpc.png"  onclick="myFunction(this, 2);">
-                    </div>
-                    <div class="column">
-                    <img style="max-width: 100%"src="cpc-news.png"  onclick="myFunction(this, 2);">
-                    </div>
-                    <div class="column">
-                    <img style="max-width: 100%"src="cpc-gallery .png"  onclick="myFunction(this, 2);">
-                    </div>
-                    <div class="column">
-                    <img style="max-width: 100%"src="cpc-about.png"  onclick="myFunction(this, 2);">
-                    </div>
-                    <div class="column">
-                    <img style="max-width: 100%" src="cpc-home.png"  onclick="myFunction(this, 2);">
-                    </div>
-
-                </div>
-                
-                <!-- The expanding image container -->
-                <div class="container">
-                    <!-- Close the image -->
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                
-                    <!-- Expanded image -->
-                    <img id="expandedImg2" style="width:100%">
-                
-                    <!-- Image text -->
-                    <div id="imgtext"></div>
-                </div>
-
-                <p>Welcome to the Bellevue College Club website, a collaborative masterpiece crafted by the talents of BC college students using Node.js, React, Express, HTML, CSS, and JavaScript. Immerse yourself in a seamless user experience, where our dynamic and engaging interface invites you to explore the diverse array of clubs thriving on campus. Powered by Node.js and Express, the website ensures a smooth and responsive performance, while the integration of React adds a layer of interactivity and modernity. Easily navigate through the multitude of clubs using our intuitive search bar, connecting you with like-minded individuals and fostering a sense of community. Join us on this digital journey, where the creativity and skill of Bellevue College students converge to bring you an online platform that celebrates the rich tapestry of campus life.</p>
-                <a target="_blank" href="https://github.com/BC-Computer-Programming-Club/WebDevTeam">View Code</a>
-            </div>
-
-            <div class="project">
-                <h2><a target="_blank" href="https://rootbeerfloat82.itch.io/eyeball-hunt">Eyeball Hunt</a></h2>
-                    <!-- The grid: four columns -->
-                    <div style="margin-left: 16%;" class="row">
-                        <div class="column">        
-                        <img style="max-width: 100%" src="eyeball-ui.png"  onclick="myFunction(this, 3);">
-                        </div>
-                        <div class="column">
-                        <img style="max-width: 100%"src="eye-gameplay.png"  onclick="myFunction(this, 3);">
-                        </div>
-                        <div class="column">
-                        <img style="max-width: 100%"src="eyeball-gameover.png"  onclick="myFunction(this, 3);">
-                        </div>
-                        <div class="column">
-                            <img style="max-width: 100%"src="eyeball-download.png"  onclick="myFunction(this, 3);">
-                        </div>
-    
-                    </div>
-                    
-                    <!-- The expanding image container -->
-                    <div class="container">
-                        <!-- Close the image -->
-                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    
-                        <!-- Expanded image -->
-                        <img id="expandedImg3" style="width:100%">
-                    
-                        <!-- Image text -->
-                        <div id="imgtext"></div>
-                    </div>
-                <p>Dive into the exciting world of 'Eyeball Hunt,' my latest creation in Unity that promises an adrenaline-pumping experience! Channel your inner ninja as you face a barrage of eyeballs and other objects hurtling towards you with realistic physics. Similar to the iconic Fruit Ninja, the game challenges you to slice the right targets while skillfully avoiding dangerous bombs. The interactive UI enhances the gaming experience, providing real-time feedback and keeping you on the edge of your seat. With multiple difficulty levels, 'Eyeball Hunt' caters to both casual players and seasoned pros, ensuring an engaging and challenging adventure for everyone willing to take on the slicing frenzy.</p>
-                <a target="_blank" href="https://github.com/Rootbeerfloat82/EyeBall-Hunt">View Code</a>
-            </div>
-    
-            <!-- Add more project divs as needed -->
-    
-            <div class="skills">
-                <h2>Skills</h2>
-                <div class="skill-column">
-                    <div class="skill">
-                        <div class="skill-name">Python</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">Flask</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">HTML</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">C#</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <!-- Add more skills as needed -->
-                </div>
-                <div class="skill-column">
-                    <div class="skill">
-                        <div class="skill-name">Java</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">Django</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 20%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">CSS</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">SQL</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <!-- Add more skills as needed -->
-                </div>
-                <div class="skill-column">
-                    <div class="skill">
-                        <div class="skill-name">JavaScript</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">Node.js</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 30%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">Express</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 30%;"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <div class="skill-name">Markdown</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 20%;"></div>
-                        </div>
-                    </div>
-                    <!-- Add more skills as needed -->
-                </div>
-            </div>
-    
-            <div class="resume">
-                <h2>Resume</h2>
-                <iframe src="resume.pdf"></iframe>
-                <p>Click the button below to download my resume.</p>
-                <a href="resume.pdf">Download Resume</a>
-            </div>
+        <div class="w3-clear"></div>
+        <h4>Messages</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>99</h3>
         </div>
-    
-        <script>
-            // Add your custom JavaScript here
-            // You can use JavaScript to add animations or interactivity to the page
-            function myFunction(imgs, int) {
-                // Get the expanded image
-                let image = "expandedImg" 
-                image+=int;
-                var expandImg = document.getElementById(image);
-                // Get the image text
-                var imgText = document.getElementById("imgtext");
-                // Use the same src in the expanded image as the image being clicked on from the grid
-                expandImg.src = imgs.src;
-                // Use the value of the alt attribute of the clickable image as text inside the expanded image
-                imgText.innerHTML = imgs.alt;
-                // Show the container element (hidden with CSS)
-                expandImg.parentElement.style.display = "block";
-            }
-        </script>
-    </body>
+        <div class="w3-clear"></div>
+        <h4>Views</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>23</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Shares</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>50</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Users</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>Regions</h5>
+        <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
+      </div>
+      <div class="w3-twothird">
+        <h5>Feeds</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>New record, over 90 views.</td>
+            <td><i>10 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+            <td>Database error.</td>
+            <td><i>15 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
+            <td>New record, over 40 users.</td>
+            <td><i>17 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+            <td>New comments.</td>
+            <td><i>25 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
+            <td>Check transactions.</td>
+            <td><i>28 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
+            <td>CPU overload.</td>
+            <td><i>35 mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
+            <td>New shares.</td>
+            <td><i>39 mins</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>General Stats</h5>
+    <p>New Visitors</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-green" style="width:25%">+25%</div>
+    </div>
+
+    <p>New Users</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-orange" style="width:50%">50%</div>
+    </div>
+
+    <p>Bounce Rate</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-red" style="width:75%">75%</div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5>Countries</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>United States</td>
+        <td>65%</td>
+      </tr>
+      <tr>
+        <td>UK</td>
+        <td>15.7%</td>
+      </tr>
+      <tr>
+        <td>Russia</td>
+        <td>5.6%</td>
+      </tr>
+      <tr>
+        <td>Spain</td>
+        <td>2.1%</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>1.9%</td>
+      </tr>
+      <tr>
+        <td>France</td>
+        <td>1.5%</td>
+      </tr>
+    </table><br>
+    <button class="w3-button w3-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Recent Users</h5>
+    <ul class="w3-ul w3-card-4 w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Mike</span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Jill</span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Jane</span><br>
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5>Recent Comments</h5>
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="/w3images/avatar3.png" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
+        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m2 text-center">
+        <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
+      </div>
+      <div class="w3-col m10 w3-container">
+        <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <div class="w3-row">
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-green">Demographic</h5>
+        <p>Language</p>
+        <p>Country</p>
+        <p>City</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-red">System</h5>
+        <p>Browser</p>
+        <p>OS</p>
+        <p>More</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-orange">Target</h5>
+        <p>Users</p>
+        <p>Active</p>
+        <p>Geo</p>
+        <p>Interests</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>FOOTER</h4>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
 </html>
-    
